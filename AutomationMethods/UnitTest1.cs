@@ -106,5 +106,14 @@ namespace AutomationMethods
             Thread.Sleep(3000);
             driver.Quit();
         }
+
+        [Fact]
+        public void NewTestMethod()
+        {
+            driver.Navigate().GoToUrl("https://techbroz.co.nz");
+            Thread.Sleep(3000);
+            driver.Quit();
+
+        }
     }
 }
