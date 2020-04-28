@@ -111,6 +111,10 @@ namespace AutomationMethods
         public void NewTestMethod()
         {
             driver.Navigate().GoToUrl("https://techbroz.co.nz");
+            driver.Manage().Window.FullScreen();
+            Thread.Sleep(3000);
+            driver.Manage().Window.Minimize();
+            Thread.Sleep(3000);
             Thread.Sleep(3000);
             driver.Quit();
 
